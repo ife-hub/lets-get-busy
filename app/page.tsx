@@ -321,9 +321,9 @@ function Confirmation({ result, aka }: { result: RsvpResponse; aka: string }) {
           <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
             Want to support the motion?
           </p>
-          <PlaceholderLine label="Bank" value="XXXX BANK (placeholder)" />
-          <PlaceholderLine label="Account name" value="LETS GET BUSY EVENTS (placeholder)" />
-          <PlaceholderLine label="Account number" value="0000000000 (placeholder)" />
+          <PlaceholderLine label="Bank" value="OPay" />
+          <PlaceholderLine label="Account name" value="DABIRA AYOBAMI ODUDE" />
+          <PlaceholderLine label="Account number" value="8085780102" />
           <p className="text-cream/40 text-[11px] mt-3">
             Totally optional — swap these for your real details before launch.
           </p>
