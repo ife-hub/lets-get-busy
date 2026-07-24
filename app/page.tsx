@@ -269,7 +269,7 @@ function Hero({ onStart }: { onStart: () => void }) {
           onClick={onStart}
           className="pill-btn-solid mt-10 px-10 py-3 text-sm tracking-widest uppercase"
         >
-          RSVP
+          Fill Form
         </button>
       </div>
     </main>
