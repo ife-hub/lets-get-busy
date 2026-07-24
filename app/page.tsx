@@ -269,7 +269,7 @@ function Hero({ onStart }: { onStart: () => void }) {
           onClick={onStart}
           className="pill-btn-solid mt-10 px-10 py-3 text-sm tracking-widest uppercase"
         >
-          Fill Form
+          RSVP
         </button>
       </div>
     </main>
@@ -317,13 +317,22 @@ function Confirmation({ result, aka }: { result: RsvpResponse; aka: string }) {
 
         {result.error && <p className="text-rust text-xs">{result.error}</p>}
 
+        <a
+          href="https://snapchat.com/t/N5FNb83c"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pill-btn-solid px-8 py-3 text-sm tracking-widest uppercase mt-2"
+        >
+          Join the Snapchat group
+        </a>
+
         <div className="w-full border border-gold/50 mt-4 p-5 text-left">
           <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
             Want to support the motion?
           </p>
-          <PlaceholderLine label="Bank" value="OPay" />
-          <PlaceholderLine label="Account name" value="DABIRA AYOBAMI ODUDE" />
-          <PlaceholderLine label="Account number" value="8085780102" />
+          <PlaceholderLine label="Bank" value="XXXX BANK (placeholder)" />
+          <PlaceholderLine label="Account name" value="LETS GET BUSY EVENTS (placeholder)" />
+          <PlaceholderLine label="Account number" value="0000000000 (placeholder)" />
           <p className="text-cream/40 text-[11px] mt-3">
             Totally optional — swap these for your real details before launch.
           </p>
@@ -339,9 +348,9 @@ function Confirmation({ result, aka }: { result: RsvpResponse; aka: string }) {
 
 function PlaceholderLine({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-center justify-between text-sm py-1 border-b border-gold/10 last:border-none">
-      <span className="text-cream/60">{label}</span>
-      <span className="text-cream font-medium">{value}</span>
+    <div className="flex items-start justify-between gap-3 text-sm py-1 border-b border-gold/10 last:border-none">
+      <span className="text-cream/60 shrink-0">{label}</span>
+      <span className="text-cream font-medium text-right break-all">{value}</span>
     </div>
   );
 }
@@ -362,9 +371,9 @@ function Review({ form }: { form: FormState }) {
     <FieldGroup title="Check it over">
       <div className="flex flex-col gap-1">
         {rows.map(([label, value]) => (
-          <div key={label} className="flex items-center justify-between text-sm py-1.5 border-b border-gold/10">
-            <span className="text-cream/50">{label}</span>
-            <span className="text-cream">{value || "—"}</span>
+          <div key={label} className="flex items-start justify-between gap-3 text-sm py-1.5 border-b border-gold/10">
+            <span className="text-cream/50 shrink-0">{label}</span>
+            <span className="text-cream text-right break-all">{value || "—"}</span>
           </div>
         ))}
       </div>
